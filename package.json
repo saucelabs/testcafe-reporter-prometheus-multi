@@ -1,0 +1,33 @@
+{
+  "name": "testcafe-reporter-prometheus-multi",
+  "version": "0.1.10",
+  "description": "Prometheus reporter for testcafe allowing for alerts based on multiple executions",
+  "keywords": [
+    "testcafe",
+    "reporter",
+    "prometheus"
+  ],
+  "main": "lib/index.js",
+  "author": "Web Development Team <webdev@saucelabs.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.18.0",
+    "npm": ">=6.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saucelabs/web-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saucelabs/web-tools/issues"
+  },
+  "homepage": "https://github.com/saucelabs/web-tools#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "jest": "^26.4.2",
+    "sinon": "9.0.2"
+  },
+  "dependencies": {
+    "prom-client": "12.0.0"
+  }
+}

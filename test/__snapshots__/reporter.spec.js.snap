@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testcafe-reporter-prometheus-multi reports three tests, one of each status 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "# HELP e2e_passed_tests Passed tests
+# TYPE e2e_passed_tests gauge
+e2e_passed_tests{app=\\"my-app\\",owner=\\"me\\"} 1
+
+# HELP e2e_skipped_tests Skipped tests
+# TYPE e2e_skipped_tests gauge
+e2e_skipped_tests{app=\\"my-app\\",owner=\\"me\\"} 1
+
+# HELP e2e_failed_tests Failed tests
+# TYPE e2e_failed_tests gauge
+e2e_failed_tests{app=\\"my-app\\",owner=\\"me\\"} 1
+",
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`testcafe-reporter-prometheus-multi test meta properties app & owner overwrite fixture properties 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "# HELP e2e_passed_tests Passed tests
+# TYPE e2e_passed_tests gauge
+e2e_passed_tests{app=\\"my-app\\",owner=\\"me\\"} 1
+e2e_passed_tests{app=\\"someone-elses-app\\",owner=\\"someone-else\\"} 1
+e2e_passed_tests{app=\\"my-app\\",owner=\\"someone-else\\"} 0
+
+# HELP e2e_skipped_tests Skipped tests
+# TYPE e2e_skipped_tests gauge
+e2e_skipped_tests{app=\\"my-app\\",owner=\\"me\\"} 0
+e2e_skipped_tests{app=\\"someone-elses-app\\",owner=\\"someone-else\\"} 0
+e2e_skipped_tests{app=\\"my-app\\",owner=\\"someone-else\\"} 0
+
+# HELP e2e_failed_tests Failed tests
+# TYPE e2e_failed_tests gauge
+e2e_failed_tests{app=\\"my-app\\",owner=\\"me\\"} 1
+e2e_failed_tests{app=\\"someone-elses-app\\",owner=\\"someone-else\\"} 0
+e2e_failed_tests{app=\\"my-app\\",owner=\\"someone-else\\"} 1
+",
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
