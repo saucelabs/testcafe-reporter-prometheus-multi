@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-prometheus-multi",
-  "version": "0.1.10",
+  "version": "1.0.0",
   "description": "Prometheus reporter for testcafe allowing for alerts based on multiple executions",
   "main": "src/index.js",
   "author": "Web Development Team <webdev@saucelabs.com>",
