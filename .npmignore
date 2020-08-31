@@ -1,5 +1,8 @@
-src
-test
+__tests__
 yarn.lock
 *.log
-package-lock.json
+coverage
+.github
+/*.js
+.editorconfig
+CONTRIBUTING.md
