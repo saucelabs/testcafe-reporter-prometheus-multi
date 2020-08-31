@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saucelabs/web-tools.git"
+    "url": "git+https://github.com/saucelabs/testcafe-reporter-prometheus-multi.git"
   },
   "keywords": [
     "testcafe",
@@ -20,7 +20,7 @@
     "npm": ">=6.14.1"
   },
   "bugs": {
-    "url": "https://github.com/saucelabs/web-tools/issues"
+    "url": "https://github.com/saucelabs/testcafe-reporter-prometheus-multi/issues"
   },
   "devDependencies": {
     "eslint": "^7.7.0",
