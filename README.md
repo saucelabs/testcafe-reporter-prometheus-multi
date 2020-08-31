@@ -1,4 +1,4 @@
-testcafe-reporter-prometheus-multi ![testcafe-reporter-prometheus-multi pipeline](https://github.com/saucelabs/testcafe-reporter-prometheus-multi/workflows/testcafe-reporter-prometheus-multi%20pipeline/badge.svg)
+testcafe-reporter-prometheus-multi ![build](https://github.com/saucelabs/testcafe-reporter-prometheus-multi/workflows/testcafe-reporter-prometheus-multi%20pipeline/badge.svg)
 ==================================
 
 Prometheus reporter for [TestCafe](https://devexpress.github.io/testcafe/) allowing for alerts based on multiple suite executions across time.
