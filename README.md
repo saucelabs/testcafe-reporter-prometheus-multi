@@ -1,4 +1,5 @@
-# testcafe-reporter-prometheus-multi
+testcafe-reporter-prometheus-multi ![testcafe-reporter-prometheus-multi pipeline](https://github.com/saucelabs/testcafe-reporter-prometheus-multi/workflows/testcafe-reporter-prometheus-multi%20pipeline/badge.svg)
+==================================
 
 Prometheus reporter for [TestCafe](https://devexpress.github.io/testcafe/) allowing for alerts based on multiple suite executions across time.
 
@@ -28,11 +29,11 @@ Use option `-r prometheus-multi:report.txt` if you're running TestCafe from comm
 
 ### Labeling tests
 
-The reporter makes use of _fixtures_' and _tests_' `meta.app` and `meta.owner`.
-If `app` or `owner` is not specified for a _test_, the `meta` from the _fixture_ is used.
+The reporter makes use of _fixtures_' and _tests_' `meta.app` and `meta.owner`. If `app` or `owner` is not specified for a _test_, the `meta` from the _fixture_ is used.
 
 #### Example fixture with correct `meta` tags
-```javascript
+
+```js
 fixture('My fixture')
   .meta({
     app: 'my-app',
@@ -114,10 +115,6 @@ npm link testcafe-reporter-prometheus-multi # or your changed package name
 #### Why is the name so long?
 
 TestCafe requires all reporters to have `testcafe-reporter-` prefix, and `testcafe-reporter-prometheus` is [already taken](https://www.npmjs.com/package/testcafe-reporter-prometheus).
-
-#### Why is the package not owned by saucelabs in NPM?
-
-Same as above, all reporters must have `testcafe-reporter-` prefix. `@saucelabs/testcafe-reporter-` is no good. 😞
 
 #### Can I customize the metric names?
 
